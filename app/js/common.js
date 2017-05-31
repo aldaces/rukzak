@@ -43,4 +43,11 @@ $(document).ready(function() {
     $('input,textarea').blur(function() {
         $(this).attr('placeholder', $(this).data('placeholder'));
     });
+    $('.slider').slick({
+        autoplay: true,
+        autoplaySpeed: 2000,
+        infinite: true
+    });
 });
+
+
