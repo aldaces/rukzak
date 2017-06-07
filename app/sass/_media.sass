@@ -1,45 +1,67 @@
 @import "vars"
 
 /*==========  Desktop First  ==========*/
+@media only screen and (max-width : 1366px)
+	.howbuy-img
+		left: -60px
+		bottom: 0px
+	.howbuy-list
+		width: 68%
+		margin: 0 auto
+	.howbuy-opt
+		left: 200px
+	.howbuy-description .h3
+		width: 24%
+@media only screen and (max-width : 1282px)
+	.howbuy-list
+		width: 100%
 
+@media only screen and (max-width : 1194px)
+	.howbuy-img
+		display: none
+	.howbuy-desc span
+		font-size: 86px
+		margin-bottom: 35px
+	.howbuy-arrow
+		&:after
+			display: none
+	.howbuy-desc p
+		width: 80%
+	.howbuy-opt
+		left: -100px
+	
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px)
 	/**/
 	.header .balloon
 		right: 80px
 	.howbuy-opt
-		left: 260px
+		left: 100px
 		line-height: 16px
-	.howbuy img
-		width: 43%
 	.action-desc
 		background-position: 72%
+	.howbuy-description .h3
+		width: 30%
+	.footer-button
+		font-size: 18px
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px)
 	/**/
-	.slide .contentholder
-		width: 83%
-	.slide .content h2
-		margin-left: 386px
-		font-size: 24px
+	.slide .slider img
+		width: 80%
 	.howbuy-desc p
 		width: 46%
 		font-size: 14px
-	.howbuy-opt
-		left: 200px
-		width: 201px
-		line-height: 12px
 	.action-desc
 		background-position: 100%
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px)
-	/**/
 	.header .promo-list
 		font-size: 20px
 		margin-left: 225px
-	.catalog .h1:after
-		right: 15px
+	.slide .slider img
+		width: 70%
 	.size p
 		font-size: 18px
 		text-align: center
@@ -70,6 +92,25 @@
 		display: none
 	.action-desc
 		background-position: 24%
+	.call-back-form
+		width: 100%
+
+@media only screen and (max-width : 375px)
+	.header .logo img
+		width: 70%
+	.header .promo-img
+		display: none
+	.header .promo-list
+		margin: 0 auto
+	.header .promo-button
+		font-size: 22px
+	.howbuy-description .h3
+		width: 100%
+		&:after
+			display: none
+	.call-back-form
+		width: 100%
+
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 320px)
@@ -92,6 +133,8 @@
 		line-height: 18px
 	.action-desc
 		background-position: 30%
+	.call-back-form
+		width: 100%
 
 /*==========  Mobile First  ==========*/
 
